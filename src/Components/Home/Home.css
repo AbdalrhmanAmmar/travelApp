@@ -1,0 +1,217 @@
+.header {
+  background: url(./../../../public/assets/12.jpg);
+  width: 100%;
+  background-color: rgba(232, 101, 101, 0.8);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.layer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.headerContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.headerContent h2 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: white;
+}
+.headerContent p {
+  color: white;
+  margin: 15px 0;
+}
+
+.headerContent button {
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  outline: none;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.trip-Image {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.trip-information {
+  border-radius: 20px;
+  background: white;
+  box-shadow: 11px 11px 29px 1px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 11px 11px 29px 1px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 11px 11px 29px 1px rgba(0, 0, 0, 0.63);
+  width: 30%;
+  padding: 20px;
+  overflow: hidden;
+}
+.trip-Image img {
+  border-radius: 20px;
+  width: 100%;
+  transition: transform 1s;
+}
+.img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.trip-Image img:hover {
+  transform: scale(1.2);
+}
+
+.buttonHeader {
+  cursor: pointer;
+  transition: all 2s;
+}
+.buttonHeader:hover {
+  background: linear-gradient(to bottom, #2a8c82, #41bfb3);
+}
+
+.destination {
+  text-align: center;
+  margin: 4rem 6rem;
+}
+
+.destination h1 {
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+}
+
+.first-des {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.des-Text {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+.des-Text h2 {
+  padding-bottom: 1rem;
+}
+.image {
+  display: flex;
+  position: relative;
+  width: 50%;
+  justify-content: space-between;
+  z-index: -99;
+}
+.image img {
+  width: 49%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+.image img:nth-child(2) {
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.trip {
+  margin: 4rem 6rem;
+  color: #2a2a2a;
+}
+
+.trip h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.trip p {
+  text-align: center;
+}
+
+.tripCard {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.t-card {
+  width: 32%;
+  text-align: start;
+  box-shadow: 11px 11px 29px 1px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 11px 11px 29px 1px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 11px 11px 29px 1px rgba(0, 0, 0, 0.63);
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.t-image {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 7px;
+}
+.t-image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+  border-radius: 7px;
+}
+.t-image:hover img {
+  transform: scale(1.3);
+}
+
+.t-card h4 {
+  font-size: 1.3rem;
+  padding: 0.9rem 0 0.2rem 0;
+}
+
+.t-card p {
+  text-align: start;
+}
+
+@media only screen and (max-width: 991px) {
+  .destination {
+    margin: 4rem 2rem;
+  }
+  .first-des {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.5rem;
+  }
+  .des-Text {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+  .image img {
+    height: 250px;
+  }
+  .trip {
+    margin: 4rem 2rem;
+  }
+  .tripCard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .t-card {
+    width: 75%;
+    margin-bottom: 1.5rem;
+  }
+}

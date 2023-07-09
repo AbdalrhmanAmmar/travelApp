@@ -1,0 +1,50 @@
+footer {
+  background: black !important;
+  color: white;
+  padding: 4rem 6rem;
+}
+.first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.icon i {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.second-section {
+  padding-top: 2rem;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.second-section div {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-section h2 {
+  font-size: 1.3rem;
+  padding: 1rem 0 0.8rem 0;
+}
+.second-section p {
+  text-decoration: none;
+  color: #fafafa;
+  padding-bottom: 0.4rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.icon i:hover {
+  color: #01959a;
+}
+
+.second-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 2rem;
+}
